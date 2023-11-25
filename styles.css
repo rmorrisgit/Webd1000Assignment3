@@ -1,142 +1,182 @@
-
+/* Reset and Basics */
 body {
-    margin:0;
-    padding:0;
-    font-family: 'Arial',sans-serif;
-
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     background-color: white;
     color: #333;
 }
-.fixed-navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
+
+/* Navigation Styles */
+.container-navbar {
     width: 100%;
     background-color: #333;
-    z-index: 1000;
+    padding: 10px 20px;
+    height: 90px;
 }
 
-/* Centering the logo and text within the navbar */
+.container-navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container-navbar li {
+    margin: 0 15px;
+    
+}
+
 .nav-center {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-/* Header Styles */
-nav li {
-    display: inline-block;
-    margin-right: 110px;
+    
 }
 
-.small-image {
-    max-width: 100px; /* Adjust the width as needed */
-    height: auto;
-}
-
-
-
-nav {
-    background-color: #333; /* Dark grey background color */
-}
-nav a {
+.nav-center a {
     text-decoration: none;
     color: #9f9f9f;
     font-size: 13px;
     font-weight: bold;
-    transition: color 0.3 ease
+    transition: color 0.3s ease;
 }
-nav a:hover{
+
+.nav-center a:hover {
     color: #ffcc00;
 }
 
 .logo {
-    max-width: 20px; 
+    max-width: 20px;
+    margin-right: 20px;
 }
 
 /* Hero Section Styles */
 .hero {
-    
     background-size: cover;
     background-position: center;
-    
-    color: #fff;
     text-align: center;
-    padding: 100px 0;
+    padding: 50px 0; /* Adjusted padding */
+    margin-top: -50px; /* Adjusted margin */
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    
 }
 .hero-content {
     max-width: 800px;
     margin: 0 auto;
+    padding-top: 50px; /* Adjusted padding */
+    
 }
-.hero h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-.hero p {
-    font-size: 18px;
-    margin-bottom: 30px;
-}
+
 .hero a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #ffcc00;
-    color: #333;
+    color:blue;
+
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
-    border-radius: 5px;
+    
     transition: background-color 0.3s ease;
+    
 }
+
 .hero a:hover {
     background-color: #333;
     color: #fff;
 }
+
 .hero-imgs {
     max-width: 500px;
 }
 
 .white {
-    background-color: white;
     color: black;
+    background-color: white;
+    
+    
+  
 }
 .black {
+
     background:black url("images/black.png") bottom center no-repeat;
     color: white;
-    
+    padding-bottom:300px;
+}
+
+.main-heading,
+.description,
+.shop-button {
+    /* Your specific styles for these elements */
+    margin-top: -40px; /* Adjust this value to bring them closer to the logo */
+    margin-bottom: 50px;
+}
+
+.main-heading,
+.description {
+    padding: 23px;
+
 }
 
 
 
 
+
+/* Grid Styles */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     max-width: 800px;
     margin: 50px auto;
-  }
 
-  .grid-item {
-    background-color:#eee;
+}
+
+.grid-item {
+    background-color: #eee;
     padding: 20px;
     text-align: center;
     border: 1px solid #ccc;
+
 }
 
 .grid-img {
     max-width: 60%;
     height: auto;
+
 }
 
-/* media query for responsiveness */ 
+
+/* black logo */
+.small-image {
+    max-width: 50px; /* Set your desired fixed height */
+    height: auto;
+    margin-top: -55px;
+}
+
+
+/* Media Query for Responsiveness */
 @media (max-width: 600px) {
-    nav {
-        text-align: center;
+    .container-navbar ul {
+        justify-content: center;
     }
 
-    nav li {
-        display: block;
-        margin: 10px 0;
+    .container-navbar li {
+        margin: 0 10px;
     }
 
     .grid-container {
