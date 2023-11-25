@@ -202,21 +202,8 @@ body {
 
 
 
-
-
-/* Media Query for Responsiveness */
-@media (max-width: 600px) {
-    .container-navbar ul {
-        justify-content: center;
-    }
-
-    .container-navbar li {
-        margin: 0 10px;
-    }
-
+@media (max-width: 800px) {
     .grid-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Update the grid to a single column */
     }
 }
-
-
