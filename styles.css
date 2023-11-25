@@ -1,23 +1,47 @@
-/* Resetting default styles for some elements */
+
 body {
     margin:0;
     padding:0;
     font-family: 'Arial',sans-serif;
 
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background-color: white;
     color: #333;
 }
+.fixed-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+}
 
+/* Centering the logo and text within the navbar */
+.nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* Header Styles */
 nav li {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 110px;
 }
 
+.small-image {
+    max-width: 100px; /* Adjust the width as needed */
+    height: auto;
+}
+
+
+
+nav {
+    background-color: #333; /* Dark grey background color */
+}
 nav a {
     text-decoration: none;
-    color: #fff;
+    color: #9f9f9f;
     font-size: 13px;
     font-weight: bold;
     transition: color 0.3 ease
@@ -25,7 +49,6 @@ nav a {
 nav a:hover{
     color: #ffcc00;
 }
-
 
 .logo {
     max-width: 20px; 
